@@ -1,15 +1,17 @@
-.button{
-    display: block;
-    margin-inline: auto;
-    padding: 19px 35px;
-    display: block;
-    margin-inline: auto;
-    border: 12px, solid,#7400b8;
-    border-radius: 40px;
-    background-color: #64dfdf;
-    width: 10rem;
+button {
     text-align: center;
-    text-decoration: none;
-  
-
-}
+    width: 8rem;
+    padding: 13px 13px;
+    margin: 1rem;
+    color: aliceblue;
+    background-color: #48bfe3;
+    border: 3px solid #56cfe1;
+    border-radius: 25px;
+  }
+  button:hover {
+    background-color: #6930c3;
+    border: 3px solid #6930c3;
+  }
+  .szoveg button {
+    margin-top: 1rem; 
+  }

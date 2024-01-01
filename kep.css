@@ -1,0 +1,55 @@
+.kepek {
+    padding-left: 0;
+  }
+  .kepek {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: inline-block;
+    position: relative;
+  }
+  .kepek a {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-family: Inter;
+    text-align: center;
+    padding-bottom: 2px;
+    padding-right: 6px;
+    font-size: 8px;
+  }
+  .kepek a:active{
+    color: var(--active-a);
+  }
+  .kepek a:hover{
+    color: var(--active-a);
+  }
+  .konyv {
+    background-image: url(kép/könyv.jpg);
+    grid-area: ko;
+  }
+  .gomb {
+    background-image: url(kép/gömb.jpg);
+    grid-area: go;
+  }
+  .lenyek {
+    background-image: url(kép/lények.jpg);
+    grid-area: le;
+  }
+  .nagykep {
+    display: flex;
+    flex-direction: column; /* Flexbox függőleges elrendezése */
+    align-items: center;
+  }
+  
+  .nagykep img {
+    max-width: 550px;
+    height: 370px; /* Állítsd be a kívánt magasságot */
+    border-radius: 12px;
+    margin-bottom: 1rem; 
+  }

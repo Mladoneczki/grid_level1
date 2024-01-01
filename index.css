@@ -1,15 +1,73 @@
 @import url(button.css);
 @import url(kep.css);
-
+@import url(variables.css);
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    line-height: normal;
-  }
-  
-  body{
-    margin: auto;
-    padding: auto;
-  }
+  font-family: var(inter);
+}
+html {
+  align-items: center;
+  background-color: darkgray;
+}
+body {
+  max-width: 1040px;
+  margin: 3rem auto;
+  padding: 6rem;
+  background-color: white;
+}
+
+.menu {
+  display: flex;
+  max-width: 750px;
+  height: 4rem;
+  align-items: center;
+  grid-area: m;
+}
+.menu img {
+  width: 100%;
+  height: 100%;
+  max-width: 3rem;
+  max-height: 3rem;
+}
+.menu a {
+  font-family: var(inter);
+}
+h1 {
+  text-align: center;
+  grid-area: h;
+}
+i {
+  text-align: center;
+  grid-area: i;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+}
+a:active {
+  color: var(--active-a);
+}
+.szoveg {
+  text-align: center; /* Szöveg középre igazítása */
+}
+
+.szoveg h2,
+.szoveg p {
+  margin: 0; /* Alapértelmezett margó eltávolítása */
+}
+.grid {
+  display: grid;
+  margin: auto;
+  grid-template-areas:
+    "m m m m m m"
+    "h h h h h h"
+    "i i i i i i"
+    "ko ko go go le le"
+    "k k k s s s";
+  grid-template-rows: auto auto auto max-content auto;
+  gap: 1rem;
+}
