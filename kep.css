@@ -21,7 +21,7 @@
     text-align: center;
     padding-bottom: 2px;
     padding-right: 6px;
-    font-size: 8px;
+    font-size: 16px;
   }
   .kepek a:active{
     color: var(--active-a);
@@ -43,13 +43,13 @@
   }
   .nagykep {
     display: flex;
-    flex-direction: column; /* Flexbox függőleges elrendezése */
+    flex-direction: column;
     align-items: center;
   }
   
   .nagykep img {
     max-width: 550px;
-    height: 370px; /* Állítsd be a kívánt magasságot */
+    height: 370px; 
     border-radius: 12px;
     margin-bottom: 1rem; 
   }
